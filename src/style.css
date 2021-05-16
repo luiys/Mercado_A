@@ -1,6 +1,111 @@
-/*Paleta de cor:
-#664E4C
-#C1D37F
-#E2D58B
-#F0E2A3
-#F9D4BB*/
+/*Paleta de cores
+    #664E4C
+    #C1D37F
+    #E2D58B
+    #F0E2A3
+    #F9D4BB
+    */
+
+html{
+    scroll-behavior: smooth;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header{
+    background-color: #f0e2a3;
+    position: fixed;
+    width: 100%;
+    height: 200px;
+    top: 0px;
+    margin: 0;
+}
+
+#inicio figure a{
+    color: #664e4c;
+    text-decoration: none;
+    font-size: 30pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+header nav{
+    display: flex;
+    background-color: #f0e2a3;
+    margin: 0;
+}
+
+header nav a{
+    font-size: 15pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: #664e4c;
+    text-transform: uppercase;
+}
+
+header nav #contato{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+header nav #redes{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+header nav #categorias{
+    background-color:#e2d58b;
+    width: 250px;
+    text-align: center;
+}
+
+#menu-categorias{
+    background-color:#F9D4BB ;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+}
+#menu-categorias li{
+    list-style: none;
+    margin-top: 10px;
+}
+#menu-categorias a{
+    text-decoration: none;
+    color: #664e4c;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11pt;
+}
+#menu-categorias hr{
+    color: #664e4c;
+    height: 1.5px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.itens{
+    border: solid;
+    margin-left: 260px;
+}
+.itens img{
+    width: 200px;
+    height: 200px;
+}
+
+#carnes{
+    margin-top: 220px;
+}
+
+#carnes figure{
+    display: flex;
+}
+
+#carnes figure figcaption{
+    font-size: 15pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #664E4C;
+    line-height: 200px;
+}
