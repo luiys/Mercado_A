@@ -6,106 +6,115 @@
     #F9D4BB
     */
 
-html{
-    scroll-behavior: smooth;
+html {
+	scroll-behavior: smooth;
 }
 
-html, body{
-    margin: 0;
-    padding: 0;
-    height: 100%;
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
 }
 
-header{
-    background-color: #f0e2a3;
-    position: fixed;
-    width: 100%;
-    height: 200px;
-    top: 0px;
-    margin: 0;
+#inicio {
+	margin-left: 50px;
 }
 
-#inicio figure a{
-    color: #664e4c;
-    text-decoration: none;
-    font-size: 30pt;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: uppercase;
+header {
+	background-color: #f0e2a3;
+	position: fixed;
+	width: 100%;
+	height: 200px;
+	top: 0px;
+	margin: 0;
 }
 
-header nav{
-    display: flex;
-    background-color: #f0e2a3;
-    margin: 0;
+#inicio figure a {
+	color: #664e4c;
+	text-decoration: none;
+	font-size: 30pt;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-transform: uppercase;
+	margin-left: 40px;
 }
 
-header nav a{
-    font-size: 15pt;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: none;
-    color: #664e4c;
-    text-transform: uppercase;
+header nav {
+	display: flex;
+	background-color: #f0e2a3;
+	margin: 0;
 }
 
-header nav #contato{
-    margin-left: 200px;
-    margin-right: 200px;
+header nav a {
+	font-size: 15pt;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-decoration: none;
+	color: #664e4c;
+	text-transform: uppercase;
 }
 
-header nav #redes{
-    margin-left: 200px;
-    margin-right: 200px;
+header nav #contato {
+	margin: 0px 600px;
 }
 
-header nav #categorias{
-    background-color:#e2d58b;
-    width: 250px;
-    text-align: center;
+header nav #categorias {
+	background-color: #e2d58b;
+	width: 250px;
+	text-align: center;
 }
 
-#menu-categorias{
-    background-color:#F9D4BB ;
-    width: 250px;
-    height: 100%;
-    position: fixed;
+#menu-categorias {
+	background-color: #f9d4bb;
+	width: 250px;
+	height: 100%;
+	position: fixed;
 }
-#menu-categorias li{
-    list-style: none;
-    margin-top: 10px;
+#menu-categorias li {
+	list-style: none;
+	margin-top: 10px;
 }
-#menu-categorias a{
-    text-decoration: none;
-    color: #664e4c;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 11pt;
+#menu-categorias a {
+	text-decoration: none;
+	color: #664e4c;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 11pt;
 }
-#menu-categorias hr{
-    color: #664e4c;
-    height: 1.5px;
-    margin-right: 10px;
-    margin-top: 10px;
-}
-
-.itens{
-    border: solid;
-    margin-left: 260px;
-}
-.itens img{
-    width: 200px;
-    height: 200px;
+#menu-categorias hr {
+	color: #664e4c;
+	height: 1.5px;
+	margin-right: 10px;
+	margin-top: 10px;
 }
 
-#carnes{
-    margin-top: 220px;
+.itens {
+	margin-top: 200px;
 }
 
-#carnes figure{
-    display: flex;
+main {
+	display: flex;
+	align-items: right;
+	flex-direction: column;
+	position: absolute;
+	top: 220px;
+	left: 260px;
+	z-index: -1;
 }
 
-#carnes figure figcaption{
-    font-size: 15pt;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #664E4C;
-    line-height: 200px;
+.itens {
+	border: solid;
+}
+.itens img {
+	width: 200px;
+	height: 200px;
+}
+
+#carnes figure {
+	display: flex;
+}
+
+#carnes figure figcaption {
+	font-size: 15pt;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #664e4c;
+	line-height: 200px;
 }
