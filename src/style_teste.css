@@ -111,9 +111,73 @@ main {
 
 .content img {
 	width: 200px;
+	height: 200px;
+	transform: scale(1);
+	transition-property: height, transform;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+
+.content figure:hover {
+	height: auto;
+	transform: scale(1.5);
+	background-color: rgb(255, 255, 255);
+	color: #000000;
+	z-index: 100;
+	border: 3px solid #664e4c;
 }
 
 .itens > section > div {
 	display: grid;
 	grid-template-columns: auto auto auto;
+	grid-column-gap: 15px;
+}
+
+.itens > section {
+	text-align: center;
+}
+
+.itens section h2 {
+	color: #664e4c;
+	font-size: 40pt;
+	margin-top: 30px;
+}
+
+.itens {
+	border: 3px solid #664e4c;
+	margin: 15px 0px;
+}
+
+#carnes_title {
+	margin-top: 0 !important;
+	margin-bottom: 20px;
+}
+
+main figure {
+	text-align: center;
+	z-index: 0;
+	background-color: rgb(255, 255, 255);
+	transform: scale(1);
+	transition-property: height, transform, z-index, background-color, color, border;
+	transition-duration: 500ms;
+	transition-timing-function: linear;
+}
+
+figcaption {
+	display: block;
+	text-align: center;
+	font-size: 18pt;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #3d3232;
+	transform: scale(1);
+	background-color: rgba(255, 255, 255, 0);
+	transition-property: height, transform, background-color, color;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+
+span {
+	color: red;
+	font-weight: bold;
+	font-size: 20pt;
 }
