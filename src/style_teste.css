@@ -4,6 +4,8 @@
 	--flax: #e2d58b;
 	--medium: #f0e2a3;
 	--apricot: #f9d4bb;
+
+	--fundo: rgb(243, 243, 243);
 }
 
 * {
@@ -112,7 +114,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	background-color: #fff;
+	background-color: var(--fundo);
 	width: 90%;
 	padding: 20px;
 }
@@ -176,7 +178,7 @@ main {
 main figure {
 	text-align: center;
 	z-index: 0;
-	background-color: rgb(255, 255, 255);
+	background-color: var(--fundo);
 	transform: scale(1);
 	transition-property: height, transform, z-index, background-color, color, border;
 	transition-duration: 500ms;
@@ -322,4 +324,129 @@ footer .top-footer a {
 	text-decoration: none;
 	color: var(--liver);
 	text-transform: uppercase;
+}
+
+/*********************** 
+    LAYOUT RESPONSIVO
+ **********************/
+
+@media screen and (max-width: 320px) {
+	html,
+	body {
+		width: 100vw;
+	}
+
+	header {
+		width: 100vw;
+		height: 17%;
+		position: fixed;
+		z-index: 101;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.content {
+		margin-top: 30%;
+	}
+
+	#inicio figure a {
+		font-size: 11pt;
+		margin: 0;
+	}
+
+	#inicio figure {
+		margin: 0;
+	}
+
+	/* #inicio figure img {
+		width: 20%;
+		height: 20%;
+	} */
+
+	/* #inicio {
+		margin-top: 20px;
+		margin-left: 100px;
+	} */
+
+	header nav,
+	#menu-categorias {
+		display: none;
+	}
+
+	.content,
+	.itens,
+	#formulario {
+		width: 100%;
+	}
+
+	.itens > section > div {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#formulario form {
+		padding: 30px;
+	}
+
+	.content figure:hover {
+		transform: unset;
+		border: unset;
+	}
+
+	.content figure:active {
+		background-color: var(--fundo);
+	}
+
+	input,
+	textarea {
+		width: 85%;
+	}
+
+	footer {
+		height: 450px;
+	}
+
+	footer nav {
+		text-align: center;
+		display: none;
+	}
+
+	footer nav a {
+		margin: 0;
+		width: 100%;
+		display: block;
+	}
+
+	#redes_sociais {
+		display: flex;
+		flex-direction: row;
+	}
+
+	#redes_sociais i {
+		margin: 0px 4px;
+		width: 50%;
+	}
+
+	.top-footer {
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	footer figure {
+		width: 30%;
+	}
+
+	footer h3 {
+		margin: 15px 0px;
+	}
+
+	footer p {
+		text-align: center;
+		font-size: 10pt;
+		margin: 10px 0px;
+	}
 }
