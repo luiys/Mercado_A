@@ -1,3 +1,11 @@
+:root {
+	--liver: #664e4c;
+	--yellowGreen: #c1d37f;
+	--flax: #e2d58b;
+	--medium: #f0e2a3;
+	--apricot: #f9d4bb;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -9,7 +17,7 @@ html {
 }
 
 header {
-	background-color: #f0e2a3;
+	background-color: var(--medium);
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -17,7 +25,7 @@ header {
 	position: sticky;
 }
 
-nav {
+header nav {
 	display: flex;
 	text-align: center;
 }
@@ -30,7 +38,7 @@ header nav a {
 	font-size: 15pt;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	text-decoration: none;
-	color: #664e4c;
+	color: var(--liver);
 	text-transform: uppercase;
 }
 
@@ -42,7 +50,7 @@ header nav a {
 }
 
 #inicio figure a {
-	color: #664e4c;
+	color: var(--liver);
 	text-decoration: none;
 	font-size: 30pt;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -50,12 +58,12 @@ header nav a {
 	margin-left: 40px;
 }
 
-#menu_contato {
+header #menu_contato {
 	margin: 0px 700px;
 }
 
-#categorias {
-	background-color: #e2d58b;
+header #categorias {
+	background-color: var(--flax);
 	width: 10%;
 	align-items: center;
 }
@@ -74,7 +82,7 @@ header nav a {
 }
 
 #menu-categorias {
-	background-color: #f9d4bb;
+	background-color: var(--apricot);
 	top: 10%;
 	width: 10%;
 	height: 100%;
@@ -83,18 +91,18 @@ header nav a {
 
 #menu-categorias a {
 	text-decoration: none;
-	color: #664e4c;
+	color: var(--liver);
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: 11pt;
 }
 
 #menu-categorias hr {
-	color: #664e4c;
+	color: var(--liver);
 	height: 2px;
 }
 
 main {
-	background-color: #f9d4bb;
+	background-color: var(--apricot);
 	display: flex;
 	justify-content: row;
 	width: 100%;
@@ -112,6 +120,7 @@ main {
 .content img {
 	width: 200px;
 	height: 200px;
+	object-fit: contain;
 	transform: scale(1);
 	transition-property: height, transform;
 	transition-duration: 1s;
@@ -120,11 +129,12 @@ main {
 
 .content figure:hover {
 	height: auto;
-	transform: scale(1.5);
+	transform: scale(1.2);
 	background-color: rgb(255, 255, 255);
 	color: #000000;
 	z-index: 100;
-	border: 3px solid #664e4c;
+	border: 3px solid var(--liver);
+	border-radius: 15px;
 }
 
 .itens > section > div {
@@ -138,19 +148,29 @@ main {
 }
 
 .itens section h2 {
-	color: #664e4c;
+	color: var(--liver);
 	font-size: 40pt;
 	margin-top: 30px;
 }
 
 .itens {
-	border: 3px solid #664e4c;
+	border: 3px solid var(--liver);
 	margin: 15px 0px;
+	border-radius: 15px;
 }
 
 #carnes_title {
 	margin-top: 0 !important;
 	margin-bottom: 20px;
+}
+
+#graos,
+#temperos,
+#margarinas {
+	display: flex !important;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 main figure {
@@ -182,17 +202,124 @@ span {
 	font-size: 20pt;
 }
 
-#formulario{
+#formulario {
 	width: 500px;
-	border: 3px #664e4c solid;
+	border: 3px var(--liver) solid;
 	border-radius: 15px;
 	margin: auto;
 	display: flex;
 	justify-content: center;
-	text-align: center;
-	color: #664e4c;
+	color: var(--liver);
+	align-items: center;
+	padding: 20px;
 }
 
-#formulario form label{
+#formulario form label {
 	font-size: 17pt;
+}
+
+#formulario form {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#contato h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+input,
+textarea {
+	margin: 5px 0px;
+	border: 0px;
+	border: 1px solid var(--liver);
+}
+
+input {
+	width: 100%;
+	height: 30px;
+	font-size: 20px;
+}
+
+textarea {
+	font-size: 20px;
+}
+
+label {
+	display: none;
+}
+
+input[type="submit"] {
+	border: none;
+	background: var(--liver);
+	color: #fff;
+	border-radius: 15px;
+}
+
+footer {
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background-color: #dcdcdc;
+	width: 100%;
+	height: 200px;
+}
+
+footer figure {
+	width: 4%;
+}
+
+footer figure img {
+	width: 100%;
+}
+
+footer nav a {
+	margin: 0px 40px;
+}
+
+.top-footer {
+	padding: 0px 30px;
+	width: 100%;
+	height: 30%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.top-footer i {
+	font-size: 20pt;
+	margin: 0px 10px;
+}
+
+.bottom-footer {
+	padding: 0px 30px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.bottom-footer h3 {
+	width: 100%;
+	text-align: center;
+	font-size: 15pt;
+}
+
+footer p {
+	margin: 0;
+}
+
+footer .top-footer a {
+	font-size: 15pt;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-decoration: none;
+	color: var(--liver);
+	text-transform: uppercase;
 }

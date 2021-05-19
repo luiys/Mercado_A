@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
 		<script src="https://kit.fontawesome.com/efb2a1f0f0.js" crossorigin="anonymous"></script>
-		<!-- <link rel="stylesheet" href="style.css"> -->
+		<!-- <link rel="stylesheet" href="style.css" /> -->
 		<link rel="stylesheet" href="style_teste.css" />
 		<title>Supermercado A</title>
 	</head>
@@ -141,7 +141,10 @@
 							</figure>
 							<figure>
 								<img src="imagens/img41.png" class="produto" />
-								<figcaption>Camarão Oceani descascado cozido congelado 400g</figcaption>
+								<figcaption>
+									Camarão Oceani descascado <br />
+									cozido congelado 400g
+								</figcaption>
 								<span>R$ 39,99</span>
 							</figure>
 						</div>
@@ -159,7 +162,7 @@
 							</figure>
 							<figure>
 								<img src="imagens/img33.png" class="produto" />
-								<figcaption>Alho roxo cada 100g </figcaption>
+								<figcaption>Alho roxo cada 100g</figcaption>
 								<span>R$ 2,89</span>
 							</figure>
 							<figure>
@@ -447,28 +450,47 @@
 						<h2>Contato</h2>
 						<form>
 							<label for="nome">Nome:</label>
-							<input type="text" id="nome" /><br />
+							<input type="text" id="nome" placeholder="Nome" /><br />
 							<label for="email">Email:</label>
-							<input type="email" id="email" /><br />
+							<input type="email" id="email" placeholder="Email" /><br />
 							<label for="assunto">Assunto:</label>
-							<input type="text" id="assunto" /><br />
+							<input type="text" id="assunto" placeholder="Assunto" /><br />
 							<label for="mensagem">Mensagem:</label>
-							<textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea><br />
+							<textarea name="mensagem" id="mensagem" cols="30" rows="7" placeholder="Digite sua mensagem"></textarea><br />
 							<input type="submit" name="submit" id="submit" />
 						</form>
 					</section>
 				</div>
 			</div>
 		</main>
-		<footer>
-			<section id="redes">
-				<div>
+		<footer id="redes">
+			<div class="top-footer">
+				<figure>
+					<img src="./imagens/logoA.png" />
+				</figure>
+
+				<nav>
+					<a href="#categorias">Categorias</a>
+
+					<a href="#contato">Contato</a>
+
+					<a href="#redes">Redes sociais</a>
+				</nav>
+
+				<div id="redes_sociais">
 					<i class="fab fa-instagram-square"></i>
 					<i class="fab fa-facebook-square"></i>
 					<i class="fab fa-twitter-square"></i>
 					<i class="fab fa-github-square"></i>
 				</div>
-			</section>
+			</div>
+
+			<div class="bottom-footer">
+				<h3>Supermercado A &copy; 2021, todos os direitos reservados.</h3>
+				<p>Luis Gustavo da Silva Feitoza, 25791311</p>
+				<p>Henrique Lopes da Silva, 26310562</p>
+				<p>Pedro Henrique Jesus da Silva, 27141276</p>
+			</div>
 		</footer>
 	</body>
 </html>
