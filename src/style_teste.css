@@ -50,7 +50,7 @@ header nav a {
 	margin-left: 40px;
 }
 
-#contato {
+#menu_contato {
 	margin: 0px 700px;
 }
 
@@ -180,4 +180,19 @@ span {
 	color: red;
 	font-weight: bold;
 	font-size: 20pt;
+}
+
+#formulario{
+	width: 500px;
+	border: 3px #664e4c solid;
+	border-radius: 15px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: #664e4c;
+}
+
+#formulario form label{
+	font-size: 17pt;
 }
