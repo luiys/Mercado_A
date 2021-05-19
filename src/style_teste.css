@@ -31,6 +31,8 @@ header {
 header nav {
 	display: flex;
 	text-align: center;
+	justify-content: space-evenly;
+	padding: 10px;
 }
 
 header figure img {
@@ -61,35 +63,58 @@ header nav a {
 	margin-left: 40px;
 }
 
-header #menu_contato {
-	margin: 0px 700px;
-}
-
 header #categorias {
 	background-color: var(--yellowGreen);
-	width: 10%;
+	width: auto;
 	align-items: center;
 }
 
 #menu-categorias li {
 	list-style: none;
 	margin-top: 20px;
+	text-align: left;
 }
 
 #menu-categorias li a {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	color: var(--liver);
 	font-size: 15pt;
+}
+
+#menu-categorias li a .icon {
+	color: inherit !important;
+	font-size: inherit !important;
+	margin-right: 15px;
+}
+
+#menu-categorias li a .text {
+	color: inherit !important;
+	font-size: inherit !important;
+	font-weight: normal;
 }
 
 #menu-categorias ul {
 	padding: 0px 10px;
 }
 
+#menu-categorias ul h2 {
+	width: 100%;
+	margin: 10px 0 30px;
+	text-align: center;
+	color: var(--liver);
+}
+
 #menu-categorias {
 	background-color: var(--flax);
-	top: 10%;
-	width: 10%;
-	height: 100%;
+	top: 0;
+	width: 200px;
+	height: 100vh;
 	position: sticky;
+	display: flex;
+	align-items: center;
 }
 
 #menu-categorias a {
@@ -116,7 +141,7 @@ main {
 	flex-direction: column;
 	flex-wrap: wrap;
 	background-color: var(--medium);
-	width: 90%;
+	width: calc(100% - 200px);
 	padding: 20px;
 }
 
@@ -160,7 +185,7 @@ main {
 	border: 3px solid var(--liver);
 	margin: 15px 0px;
 	border-radius: 15px;
-	box-shadow: 3px 3px 10px var(--liver)
+	box-shadow: 3px 3px 10px var(--liver);
 }
 
 #carnes_title {
@@ -241,7 +266,7 @@ textarea {
 	margin: 5px 0px;
 	border: 0px;
 	border: 1px solid var(--liver);
-	box-shadow: 3px 3px var(--liver)
+	box-shadow: 3px 3px var(--liver);
 }
 
 input {
@@ -277,7 +302,8 @@ footer {
 }
 
 footer figure {
-	width: 4%;
+	width: 48px;
+	margin: 0 !important;
 }
 
 footer figure img {
@@ -286,6 +312,22 @@ footer figure img {
 
 footer nav a {
 	margin: 0px 40px;
+}
+
+.fa-facebook-square {
+	color: #4267b2;
+}
+
+.fa-instagram-square {
+	color: #833ab4;
+}
+
+.fa-twitter-square {
+	color: #1da1f2;
+}
+
+.fa-github-square {
+	background-color: #fff;
 }
 
 .top-footer {
@@ -330,11 +372,15 @@ footer .top-footer a {
 	text-transform: uppercase;
 }
 
+#menu-categorias-responsivo {
+	display: none;
+}
+
 /*********************** 
     LAYOUT RESPONSIVO
  **********************/
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
 	html,
 	body {
 		width: 100vw;
@@ -342,17 +388,17 @@ footer .top-footer a {
 
 	header {
 		width: 100vw;
-		height: 17%;
+		height: 20%;
 		position: fixed;
 		z-index: 101;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
 
 	.content {
-		margin-top: 30%;
+		margin-top: 40%;
 	}
 
 	#inicio figure a {
@@ -379,6 +425,27 @@ footer .top-footer a {
 		display: none;
 	}
 
+	#menu-categorias-responsivo {
+		display: flex;
+		height: 20%;
+		/* width: 100%;
+		align-items: center;
+		justify-content: center; */
+	}
+
+	#menu-categorias-responsivo ul {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		padding: 0;
+	}
+
+	#menu-categorias-responsivo a {
+		text-decoration: none;
+		margin: 0px 3px;
+		/* box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.473); */
+	}
+
 	.content,
 	.itens,
 	#formulario {
@@ -393,7 +460,7 @@ footer .top-footer a {
 	}
 
 	#formulario form {
-		padding: 30px;
+		padding: 10px;
 	}
 
 	.content figure:hover {
@@ -407,7 +474,7 @@ footer .top-footer a {
 
 	input,
 	textarea {
-		width: 85%;
+		width: 100%;
 	}
 
 	footer {
